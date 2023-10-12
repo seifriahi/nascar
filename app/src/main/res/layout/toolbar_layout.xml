@@ -1,0 +1,52 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<!--TODO  Add an AppBarLayout with a Toolbar that contains a menu and icon ic_dehaze -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <!-- Add your menu items here -->
+
+
+            <TextView
+                android:id="@+id/toolbar_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nascar"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <!-- Menu icon -->
+            <ImageView
+                android:id="@+id/menu_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_dehaze"
+                android:layout_gravity="end"
+                android:padding="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="Icône du menu"
+                />
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Your content goes here -->
+
+</LinearLayout>
